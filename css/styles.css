@@ -1,0 +1,272 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.navbar {
+    background-color: #f6b319 !important;
+    height: 140px;
+}
+
+.brand-logo {
+    height: 120px;
+    width: 120px;
+}
+
+.extra-kosher {
+    font-size: 0.9rem;
+    color: black;
+    font-size: 1rem;
+}
+
+.star-image {
+    margin-left: 12px;
+}
+.collapse {
+    margin-left: 80px;
+}
+a.nav-link {
+    margin-left: 5px;
+}
+
+#phone a{
+    margin-left: 100px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black !important;
+}
+
+.extra-hover:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.extra-deliver {
+    margin-left: 100px;
+    font-size: 1rem;
+    text-align: right;
+    color:  black;
+}
+
+.extra-btn {
+    background-color: #f6b319;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.extra-mobile-deliver{
+    text-align: center;
+}
+
+.jumbotron {
+     padding: 0rem 0rem;
+     margin-top: 20px;
+     box-shadow: 10px 10px 10px 10px #1a0b0b;
+    }
+#menu-tile, #special-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #special-tile:hover,#map-tile:hover {
+    box-shadow: 0px 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+    background: url("../images/menu.jpg");
+    background-position: center;
+}
+
+#special-tile {
+    background: url("../images/specials.jpg");
+    background-position: center;
+}
+
+#menu-tile span ,#special-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.4;
+}
+
+.panel-footer {
+    margin-top: 10px;
+    background-color: rgb(49, 46, 46);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0rem;
+}
+
+#address p {
+    color: green;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    
+}
+
+#testimonails {
+    font-style: italic;
+}
+#testimonails p:nth-child(2) {
+    margin-top: 25px;
+}
+/* 1 *******************Large devices only*******************/
+@media (min-width: 1200px) {
+    .extra-btn {
+        display: none;
+    }
+    .extra-mobile-deliver {
+        display: none;
+    }
+    .navbar h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .jumbotron {
+        background: url("../images/main-page-1200.jpg") no-repeat;
+        height: 675px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+}
+/* 2 *******************Medium Device only*********************/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .extra-btn {
+        display: none;
+    } 
+     .extra-mobile-deliver {
+        display: none;
+    }
+    .extra-main-page {
+        background-image: url("main-page-1000.jpg");
+    }
+    .jumbotron {
+        background: url("../images/main-page-992.jpg") no-repeat;
+        height: 558px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+    .navbar h1{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .extra-kosher{
+        font-size: 0.8rem;
+    }
+    
+}
+/* **********************Small device only*******************/
+@media (min-width: 768px) and (max-width: 991px){
+    h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    .extra-deliver{
+        display: none;
+    }
+    .extra-kosher {
+        font-size: 0.8rem;
+    }
+    .extra-btn{
+        height: 40px;
+        width: 690px;
+    }
+    .navbar {
+        height: 120px;
+    }
+    #phone a{
+        display: none;
+    }
+    /* .extra-deliver {
+        display: none;  
+    } */
+    .jumbotron {
+        background: url("../images/main-page-390.jpg") no-repeat;
+        height: 432px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+    
+}
+
+/************************Extra small device only***************/
+@media (max-width: 767px) {
+    /* h1 {
+        font-size: 20px;
+    } */
+    .navbar h1{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .brand-logo {
+      display: none;
+    }
+    .navbar {
+        height: 90px;
+    }
+    .extra-kosher {
+        font-size: 0.8rem;
+    }
+    .star-image {
+        margin-left: 1px;
+    }
+    #phone a{
+       display: none;
+    }
+    .extra-deliver {
+       display: none;  
+    }
+    .extra-btn{
+        height: 40px;
+        width: 515px;
+    }
+    .collapse {
+        margin-left: 0;
+    }
+    .jumbotron {
+        background: url("../images/main-page-510.jpg") no-repeat;
+        height: 300px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+    .menu-item-photo {
+        margin-right: auto;
+      
+    }
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+       
+    }
+    .menu-item-description {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .extra-navbar {
+        text-align: center;
+        border-radius: 10px;
+        background-color: #f6b319;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1282px){
+    #phone a {
+        font-size: 20px;
+    }
+}
